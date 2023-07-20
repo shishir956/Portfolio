@@ -9,14 +9,19 @@ background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 } */
 html{
     background-color: #002B5B;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 body{
     background: #002B5B;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 #stuff{
     background: #002B5B;
+    margin-bottom: 20% ;
 }
 
 .frame.row{
@@ -30,6 +35,13 @@ body{
     --bs-border-opacity: 0.5;
     align-items: left;
     color: white;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.right{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .left img{
@@ -41,8 +53,21 @@ body{
 }
 
 #footer{
-    background-color: rgba(69, 65, 65, 0.882);
+    background-color: black;
     background-image:  none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+}
+
+#stuff{
+    position: absolute;
+    min-height: 75%;
+}
+
+.botom{
+    background-color: rgb(15, 24, 24);
 }
 
 @media (max-width:992px){
@@ -51,8 +76,5 @@ body{
         padding-bottom: 5%;
         background: #002B5B;
         padding-right: 0;
-    }
-    #footer{
-        padding-top: 100%;
     }
 }
